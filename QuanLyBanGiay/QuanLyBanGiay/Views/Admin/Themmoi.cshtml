@@ -1,0 +1,108 @@
+﻿@model QuanLyBanGiay.Models.GIAY
+
+@{
+    ViewBag.Title = "Themmoi";
+    Layout = "~/Views/Layout/AdminLayout.cshtml";
+}
+
+<h2>Themmoi</h2>
+
+@using (Html.BeginForm("Themmoi", "Admin", FormMethod.Post, new { @enctype= "multipart/form-data"}))
+{
+    @Html.AntiForgeryToken() 
+    
+    <div class="form-horizontal">
+        <h4>GIAY</h4>
+        <hr />
+        @Html.ValidationSummary(true)
+        <div class="form-group">
+            @Html.LabelFor(model => model.IDGIAY, htmlAttributes: new { @class = "control-label col-md-2" })
+            <div class="col-md-10">
+                @Html.EditorFor(model => model.IDGIAY)
+                @Html.ValidationMessageFor(model => model.IDGIAY)
+            </div>
+        </div>
+
+        <div class="form-group">
+            @Html.LabelFor(model => model.Tengiay, htmlAttributes: new { @class = "control-label col-md-2" })
+            <div class="col-md-10">
+                @Html.EditorFor(model => model.Tengiay)
+                @Html.ValidationMessageFor(model => model.Tengiay)
+            </div>
+        </div>
+
+        <div class="form-group">
+            @Html.LabelFor(model => model.Loaigiay, htmlAttributes: new { @class = "control-label col-md-2" })
+            <div class="col-md-10">
+                @Html.EditorFor(model => model.Loaigiay)
+                @Html.ValidationMessageFor(model => model.Loaigiay)
+            </div>
+        </div>
+
+        <div class="form-group">
+            @Html.LabelFor(model => model.Soluong, htmlAttributes: new { @class = "control-label col-md-2" })
+            <div class="col-md-10">
+                @Html.EditorFor(model => model.Soluong)
+                @Html.ValidationMessageFor(model => model.Soluong)
+            </div>
+        </div>
+
+        <div class="form-group">
+            @Html.LabelFor(model => model.Size, htmlAttributes: new { @class = "control-label col-md-2" })
+            <div class="col-md-10">
+                @Html.EditorFor(model => model.Size)
+                @Html.ValidationMessageFor(model => model.Size)
+            </div>
+        </div>
+
+        <div class="form-group">
+            @Html.LabelFor(model => model.Mausac, htmlAttributes: new { @class = "control-label col-md-2" })
+            <div class="col-md-10">
+                @Html.EditorFor(model => model.Mausac)
+                @Html.ValidationMessageFor(model => model.Mausac)
+            </div>
+        </div>
+
+        <div class="form-group">
+            @Html.LabelFor(model => model.IDNCC, htmlAttributes: new { @class = "control-label col-md-2" })
+            <div class="col-md-10">
+                @Html.EditorFor(model => model.IDNCC)
+                @Html.ValidationMessageFor(model => model.IDNCC)
+            </div>
+        </div>
+
+        <div class="form-group">
+            @Html.LabelFor(model => model.DongiaN, htmlAttributes: new { @class = "control-label col-md-2" })
+            <div class="col-md-10">
+                @Html.EditorFor(model => model.DongiaN)
+                @Html.ValidationMessageFor(model => model.DongiaN)
+            </div>
+        </div>
+
+        <div class="form-group">
+            @Html.LabelFor(model => model.DongiaB, htmlAttributes: new { @class = "control-label col-md-2" })
+            <div class="col-md-10">
+                @Html.EditorFor(model => model.DongiaB)
+                @Html.ValidationMessageFor(model => model.DongiaB)
+            </div>
+        </div>
+
+        <div class="form-group">
+            @Html.LabelFor(model => model.Anh, htmlAttributes: new { @class = "control-label col-md-2" })
+            <div class="col-md-10">
+                <input type="file" name="fileUpload" />
+                @ViewBag.ThongBao
+            </div>
+        </div>
+
+        <div class="form-group">
+            <div class="col-md-offset-2 col-md-10">
+                <input type="submit" value="Create" class="btn btn-default" />
+            </div>
+        </div>
+    </div>
+}
+
+<div>
+    @Html.ActionLink("Back to List", "Index")
+</div>

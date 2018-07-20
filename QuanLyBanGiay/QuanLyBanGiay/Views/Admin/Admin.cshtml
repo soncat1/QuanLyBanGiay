@@ -1,0 +1,95 @@
+﻿@using PagedList.Mvc;
+@using PagedList;
+@model PagedList.PagedList<QuanLyBanGiay.Models.GIAY>
+
+@{
+    ViewBag.Title = "Admin";
+    Layout = "~/Views/Layout/AdminLayout.cshtml";
+}
+
+<h2>Admin</h2>
+
+<p>
+    @Html.ActionLink("Thêm Mới", "Themmoi")
+</p>
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.First().IDGIAY)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.First().Tengiay)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.First().Loaigiay)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.First().Soluong)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.First().Size)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.First().Mausac)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.First().IDNCC)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.First().DongiaN)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.First().DongiaB)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.First().Anh)
+        </th>
+        <th></th>
+    </tr>
+
+@foreach (var item in Model) {
+    <tr>
+        <td>
+            @Html.DisplayFor(modelItem => item.IDGIAY)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Tengiay)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Loaigiay)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Soluong)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Size)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Mausac)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.IDNCC)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.DongiaN)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.DongiaB)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Anh)
+        </td>
+        <td>
+            @Html.ActionLink("Sửa", "Edit", new { @IDGIAY = item.IDGIAY }) |
+            @Html.ActionLink("Hiển Thị", "Details", new { /* id=item.PrimaryKey */ }) |
+            @Html.ActionLink("Xóa", "Delete", new { @IDGIAY = item.IDGIAY })
+        </td>
+    </tr>
+}
+
+</table>
+
+Trang @(Model.PageCount < Model.PageNumber ? 0 : Model.PageNumber)/@Model.PageCount
+<div class="Menutrang">
+    @Html.PagedListPager(Model, page => Url.Action("Admin", new { page = page }))
+</div>

@@ -1,0 +1,402 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="QLGModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+  <EntityType Name="CTHDB">
+    <Key>
+      <PropertyRef Name="IDB" />
+    </Key>
+    <Property Name="IDB" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="MaHDB" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="IDGIAY" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="Donvi" Type="varchar" MaxLength="10" />
+    <Property Name="DongiaB" Type="int" />
+    <Property Name="Soluong" Type="int" />
+    <Property Name="Thanhtien" Type="int" />
+  </EntityType>
+  <EntityType Name="CTHDN">
+    <Key>
+      <PropertyRef Name="IDN" />
+    </Key>
+    <Property Name="IDN" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="MaHDN" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="IDGIAY" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="Donvi" Type="varchar" MaxLength="10" Nullable="false" />
+    <Property Name="DongiaN" Type="int" />
+    <Property Name="Soluong" Type="int" />
+    <Property Name="Thanhtien" Type="int" />
+  </EntityType>
+  <EntityType Name="DOITRA">
+    <Key>
+      <PropertyRef Name="MaDTra" />
+    </Key>
+    <Property Name="MaDTra" Type="varchar" MaxLength="10" Nullable="false" />
+    <Property Name="IDKH" Type="varchar" MaxLength="10" Nullable="false" />
+    <Property Name="IDGIAY" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="MaHDB" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="Soluong" Type="int" />
+    <Property Name="NgayDoitra" Type="datetime" />
+    <Property Name="Xuly" Type="nvarchar" MaxLength="10" Nullable="false" />
+  </EntityType>
+  <EntityType Name="DONHANG">
+    <Key>
+      <PropertyRef Name="MaDDH" />
+    </Key>
+    <Property Name="MaDDH" Type="varchar" MaxLength="10" Nullable="false" />
+    <Property Name="IDKH" Type="varchar" MaxLength="10" Nullable="false" />
+    <Property Name="IDGIAY" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="IDNV" Type="varchar" MaxLength="10" Nullable="false" />
+    <Property Name="Soluong" Type="int" />
+    <Property Name="NgayDat" Type="datetime" />
+    <Property Name="NgayGH" Type="datetime" />
+  </EntityType>
+  <EntityType Name="GIAY">
+    <Key>
+      <PropertyRef Name="IDGIAY" />
+    </Key>
+    <Property Name="IDGIAY" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="Tengiay" Type="varchar" MaxLength="20" Nullable="false" />
+    <Property Name="Loaigiay" Type="nvarchar" MaxLength="50" />
+    <Property Name="Soluong" Type="int" />
+    <Property Name="Size" Type="varchar" MaxLength="10" Nullable="false" />
+    <Property Name="Mausac" Type="nvarchar" MaxLength="50" />
+    <Property Name="IDNCC" Type="varchar" MaxLength="10" Nullable="false" />
+    <Property Name="DongiaN" Type="int" />
+    <Property Name="DongiaB" Type="int" />
+    <Property Name="Anh" Type="varchar" MaxLength="50" Nullable="false" />
+  </EntityType>
+  <EntityType Name="HDB">
+    <Key>
+      <PropertyRef Name="MaHDB" />
+    </Key>
+    <Property Name="MaHDB" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="Ngaylap" Type="datetime" />
+    <Property Name="MaThe" Type="nvarchar" MaxLength="50" />
+    <Property Name="IDKH" Type="varchar" MaxLength="10" Nullable="false" />
+    <Property Name="Chietkhau" Type="int" />
+    <Property Name="Thanhtien" Type="int" />
+  </EntityType>
+  <EntityType Name="HDN">
+    <Key>
+      <PropertyRef Name="MaHDN" />
+    </Key>
+    <Property Name="MaHDN" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="Ngaylap" Type="datetime" Nullable="false" />
+    <Property Name="IDNV" Type="varchar" MaxLength="10" Nullable="false" />
+    <Property Name="IDNCC" Type="varchar" MaxLength="10" Nullable="false" />
+    <Property Name="Thanhtien" Type="int" />
+  </EntityType>
+  <EntityType Name="KHACHHANG">
+    <Key>
+      <PropertyRef Name="IDKH" />
+    </Key>
+    <Property Name="IDKH" Type="varchar" MaxLength="10" Nullable="false" />
+    <Property Name="tenkhachhang" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="gioitinh" Type="bit" Nullable="false" />
+    <Property Name="diachi" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="sodienthoai" Type="varchar" MaxLength="11" Nullable="false" />
+    <Property Name="email" Type="varchar" MaxLength="50" Nullable="false" />
+  </EntityType>
+  <EntityType Name="LOAITHE">
+    <Key>
+      <PropertyRef Name="MaLoai" />
+    </Key>
+    <Property Name="MaLoai" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="Tenloai" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="DT" Type="nvarchar" MaxLength="50" Nullable="false" />
+  </EntityType>
+  <EntityType Name="NCC">
+    <Key>
+      <PropertyRef Name="IDNCC" />
+    </Key>
+    <Property Name="IDNCC" Type="varchar" MaxLength="10" Nullable="false" />
+    <Property Name="TenNCC" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="diachi" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="dienthoai" Type="varchar" MaxLength="11" Nullable="false" />
+  </EntityType>
+  <EntityType Name="NHANVIEN">
+    <Key>
+      <PropertyRef Name="IDNV" />
+    </Key>
+    <Property Name="IDNV" Type="varchar" MaxLength="10" Nullable="false" />
+    <Property Name="TenNV" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="ngaysinh" Type="date" />
+    <Property Name="cmt" Type="varchar" MaxLength="12" Nullable="false" />
+    <Property Name="diachi" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="dienthoai" Type="varchar" MaxLength="11" Nullable="false" />
+    <Property Name="bophan" Type="varchar" MaxLength="20" Nullable="false" />
+    <Property Name="gioitinh" Type="bit" Nullable="false" />
+    <Property Name="taikhoan" Type="varchar" MaxLength="20" Nullable="false" />
+  </EntityType>
+  <EntityType Name="THEKH">
+    <Key>
+      <PropertyRef Name="MaThe" />
+    </Key>
+    <Property Name="MaThe" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="IDKH" Type="varchar" MaxLength="10" Nullable="false" />
+    <Property Name="MaLoai" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="Ngaycap" Type="datetime" />
+  </EntityType>
+  <Association Name="fk_CTHDB_IDGIAY">
+    <End Role="GIAY" Type="Self.GIAY" Multiplicity="1">
+      <OnDelete Action="Cascade" />
+    </End>
+    <End Role="CTHDB" Type="Self.CTHDB" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="GIAY">
+        <PropertyRef Name="IDGIAY" />
+      </Principal>
+      <Dependent Role="CTHDB">
+        <PropertyRef Name="IDGIAY" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="fk_CTHDB_MaHDB">
+    <End Role="HDB" Type="Self.HDB" Multiplicity="1">
+      <OnDelete Action="Cascade" />
+    </End>
+    <End Role="CTHDB" Type="Self.CTHDB" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="HDB">
+        <PropertyRef Name="MaHDB" />
+      </Principal>
+      <Dependent Role="CTHDB">
+        <PropertyRef Name="MaHDB" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="fk_CTHDN_IDGIAY">
+    <End Role="GIAY" Type="Self.GIAY" Multiplicity="1">
+      <OnDelete Action="Cascade" />
+    </End>
+    <End Role="CTHDN" Type="Self.CTHDN" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="GIAY">
+        <PropertyRef Name="IDGIAY" />
+      </Principal>
+      <Dependent Role="CTHDN">
+        <PropertyRef Name="IDGIAY" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="fk_CTHDN_MaHDN">
+    <End Role="HDN" Type="Self.HDN" Multiplicity="1">
+      <OnDelete Action="Cascade" />
+    </End>
+    <End Role="CTHDN" Type="Self.CTHDN" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="HDN">
+        <PropertyRef Name="MaHDN" />
+      </Principal>
+      <Dependent Role="CTHDN">
+        <PropertyRef Name="MaHDN" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="fk_DOITRA_IDGIAY">
+    <End Role="GIAY" Type="Self.GIAY" Multiplicity="1">
+      <OnDelete Action="Cascade" />
+    </End>
+    <End Role="DOITRA" Type="Self.DOITRA" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="GIAY">
+        <PropertyRef Name="IDGIAY" />
+      </Principal>
+      <Dependent Role="DOITRA">
+        <PropertyRef Name="IDGIAY" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="fk_DOITRA_IDKH">
+    <End Role="KHACHHANG" Type="Self.KHACHHANG" Multiplicity="1">
+      <OnDelete Action="Cascade" />
+    </End>
+    <End Role="DOITRA" Type="Self.DOITRA" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="KHACHHANG">
+        <PropertyRef Name="IDKH" />
+      </Principal>
+      <Dependent Role="DOITRA">
+        <PropertyRef Name="IDKH" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="fk_DOITRA_MaHDB">
+    <End Role="HDB" Type="Self.HDB" Multiplicity="1">
+      <OnDelete Action="Cascade" />
+    </End>
+    <End Role="DOITRA" Type="Self.DOITRA" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="HDB">
+        <PropertyRef Name="MaHDB" />
+      </Principal>
+      <Dependent Role="DOITRA">
+        <PropertyRef Name="MaHDB" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="fk_DONHANG_IDGIAY">
+    <End Role="GIAY" Type="Self.GIAY" Multiplicity="1">
+      <OnDelete Action="Cascade" />
+    </End>
+    <End Role="DONHANG" Type="Self.DONHANG" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="GIAY">
+        <PropertyRef Name="IDGIAY" />
+      </Principal>
+      <Dependent Role="DONHANG">
+        <PropertyRef Name="IDGIAY" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="fk_DONHANG_IDKH">
+    <End Role="KHACHHANG" Type="Self.KHACHHANG" Multiplicity="1">
+      <OnDelete Action="Cascade" />
+    </End>
+    <End Role="DONHANG" Type="Self.DONHANG" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="KHACHHANG">
+        <PropertyRef Name="IDKH" />
+      </Principal>
+      <Dependent Role="DONHANG">
+        <PropertyRef Name="IDKH" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="fk_DONHANG_IDNV">
+    <End Role="NHANVIEN" Type="Self.NHANVIEN" Multiplicity="1">
+      <OnDelete Action="Cascade" />
+    </End>
+    <End Role="DONHANG" Type="Self.DONHANG" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="NHANVIEN">
+        <PropertyRef Name="IDNV" />
+      </Principal>
+      <Dependent Role="DONHANG">
+        <PropertyRef Name="IDNV" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="fk_HDN_IDNCC">
+    <End Role="NCC" Type="Self.NCC" Multiplicity="1">
+      <OnDelete Action="Cascade" />
+    </End>
+    <End Role="HDN" Type="Self.HDN" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="NCC">
+        <PropertyRef Name="IDNCC" />
+      </Principal>
+      <Dependent Role="HDN">
+        <PropertyRef Name="IDNCC" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="fk_HDN_IDNV">
+    <End Role="NHANVIEN" Type="Self.NHANVIEN" Multiplicity="1">
+      <OnDelete Action="Cascade" />
+    </End>
+    <End Role="HDN" Type="Self.HDN" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="NHANVIEN">
+        <PropertyRef Name="IDNV" />
+      </Principal>
+      <Dependent Role="HDN">
+        <PropertyRef Name="IDNV" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="fk_THEKH_IDKH">
+    <End Role="KHACHHANG" Type="Self.KHACHHANG" Multiplicity="1" />
+    <End Role="THEKH" Type="Self.THEKH" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="KHACHHANG">
+        <PropertyRef Name="IDKH" />
+      </Principal>
+      <Dependent Role="THEKH">
+        <PropertyRef Name="IDKH" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="fk_THEKH_MaLoai">
+    <End Role="LOAITHE" Type="Self.LOAITHE" Multiplicity="1">
+      <OnDelete Action="Cascade" />
+    </End>
+    <End Role="THEKH" Type="Self.THEKH" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="LOAITHE">
+        <PropertyRef Name="MaLoai" />
+      </Principal>
+      <Dependent Role="THEKH">
+        <PropertyRef Name="MaLoai" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <EntityContainer Name="QLGModelStoreContainer">
+    <EntitySet Name="CTHDB" EntityType="Self.CTHDB" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="CTHDN" EntityType="Self.CTHDN" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="DOITRA" EntityType="Self.DOITRA" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="DONHANG" EntityType="Self.DONHANG" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="GIAY" EntityType="Self.GIAY" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="HDB" EntityType="Self.HDB" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="HDN" EntityType="Self.HDN" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="KHACHHANG" EntityType="Self.KHACHHANG" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="LOAITHE" EntityType="Self.LOAITHE" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="NCC" EntityType="Self.NCC" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="NHANVIEN" EntityType="Self.NHANVIEN" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="THEKH" EntityType="Self.THEKH" Schema="dbo" store:Type="Tables" />
+    <AssociationSet Name="fk_CTHDB_IDGIAY" Association="Self.fk_CTHDB_IDGIAY">
+      <End Role="GIAY" EntitySet="GIAY" />
+      <End Role="CTHDB" EntitySet="CTHDB" />
+    </AssociationSet>
+    <AssociationSet Name="fk_CTHDB_MaHDB" Association="Self.fk_CTHDB_MaHDB">
+      <End Role="HDB" EntitySet="HDB" />
+      <End Role="CTHDB" EntitySet="CTHDB" />
+    </AssociationSet>
+    <AssociationSet Name="fk_CTHDN_IDGIAY" Association="Self.fk_CTHDN_IDGIAY">
+      <End Role="GIAY" EntitySet="GIAY" />
+      <End Role="CTHDN" EntitySet="CTHDN" />
+    </AssociationSet>
+    <AssociationSet Name="fk_CTHDN_MaHDN" Association="Self.fk_CTHDN_MaHDN">
+      <End Role="HDN" EntitySet="HDN" />
+      <End Role="CTHDN" EntitySet="CTHDN" />
+    </AssociationSet>
+    <AssociationSet Name="fk_DOITRA_IDGIAY" Association="Self.fk_DOITRA_IDGIAY">
+      <End Role="GIAY" EntitySet="GIAY" />
+      <End Role="DOITRA" EntitySet="DOITRA" />
+    </AssociationSet>
+    <AssociationSet Name="fk_DOITRA_IDKH" Association="Self.fk_DOITRA_IDKH">
+      <End Role="KHACHHANG" EntitySet="KHACHHANG" />
+      <End Role="DOITRA" EntitySet="DOITRA" />
+    </AssociationSet>
+    <AssociationSet Name="fk_DOITRA_MaHDB" Association="Self.fk_DOITRA_MaHDB">
+      <End Role="HDB" EntitySet="HDB" />
+      <End Role="DOITRA" EntitySet="DOITRA" />
+    </AssociationSet>
+    <AssociationSet Name="fk_DONHANG_IDGIAY" Association="Self.fk_DONHANG_IDGIAY">
+      <End Role="GIAY" EntitySet="GIAY" />
+      <End Role="DONHANG" EntitySet="DONHANG" />
+    </AssociationSet>
+    <AssociationSet Name="fk_DONHANG_IDKH" Association="Self.fk_DONHANG_IDKH">
+      <End Role="KHACHHANG" EntitySet="KHACHHANG" />
+      <End Role="DONHANG" EntitySet="DONHANG" />
+    </AssociationSet>
+    <AssociationSet Name="fk_DONHANG_IDNV" Association="Self.fk_DONHANG_IDNV">
+      <End Role="NHANVIEN" EntitySet="NHANVIEN" />
+      <End Role="DONHANG" EntitySet="DONHANG" />
+    </AssociationSet>
+    <AssociationSet Name="fk_HDN_IDNCC" Association="Self.fk_HDN_IDNCC">
+      <End Role="NCC" EntitySet="NCC" />
+      <End Role="HDN" EntitySet="HDN" />
+    </AssociationSet>
+    <AssociationSet Name="fk_HDN_IDNV" Association="Self.fk_HDN_IDNV">
+      <End Role="NHANVIEN" EntitySet="NHANVIEN" />
+      <End Role="HDN" EntitySet="HDN" />
+    </AssociationSet>
+    <AssociationSet Name="fk_THEKH_IDKH" Association="Self.fk_THEKH_IDKH">
+      <End Role="KHACHHANG" EntitySet="KHACHHANG" />
+      <End Role="THEKH" EntitySet="THEKH" />
+    </AssociationSet>
+    <AssociationSet Name="fk_THEKH_MaLoai" Association="Self.fk_THEKH_MaLoai">
+      <End Role="LOAITHE" EntitySet="LOAITHE" />
+      <End Role="THEKH" EntitySet="THEKH" />
+    </AssociationSet>
+  </EntityContainer>
+</Schema>

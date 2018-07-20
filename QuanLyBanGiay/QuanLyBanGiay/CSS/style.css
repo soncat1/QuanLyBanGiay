@@ -1,0 +1,207 @@
+* { margin:0; padding:0; color: silver;}
+a {text-decoration: none;}
+ li { list-style-type:none; }
+html, body { height:100%;}
+body { background: url(../images/backgr.jpg); font-family:Tahoma, Geneva, sans-serif; font-size:100%; line-height:1.125em; color:#bca695; }
+.box { background:url(../images/wrapper.jpg) no-repeat left top; width:950px; height:364px; margin-top: 10px;}
+#case {width:950px; margin:0 auto; position:relative;}
+
+#case .menu { width:100%;}
+#case .menu ul li { display:inline-table; position: relative;}
+#case .menu ul li a { display:block; width:150px; height:55px; line-height:52px; font-size:16px; text-transform:uppercase; font-weight:bold; color:#fff; text-decoration:none; font-family:"Trebuchet MS", Arial, Helvetica, sans-serif; text-align:center; margin-right:2px; background:url(../images/nav-bg1.png) no-repeat left top;}
+#case .menu ul li a:hover { background:url(../images/nav-bg2.png) no-repeat left top;}
+#case .menu ul li ul {display: none; position: absolute;}
+#case .menu ul li:hover ul{display: block;}
+
+.box .inner { padding:296px 0 0 2px;}
+
+#case .wrapper{
+	width: 100%;
+	height: 100px;
+	margin-top: 10px;
+	position: relative;
+
+}
+.icon {
+	position: relative;
+	top: 10px;
+	background: url('../images/Big shoe.png') no-repeat left top; width:350px; height: 100px; 
+	float: left;
+}
+
+/*.search_form{position:relative; top: 30px;}
+.search_input{border:#dc3333 thin solid!important;width:100%;margin:0!important;padding:0 15px;border-radius:0; position: absolute;}
+.btnsearch{position:absolute;top:0;right:0;color:#fff;font-size:16px;border:#dc3333 1px solid;border-radius:0;border-left:none;left: 700px;}
+.btnsearch{background:#dc3333;width:100px;height:48px}
+.search_input{height:46px;width: 380px;}
+.btnsearch:hover{color:#fff}*/
+#txtTimKiem{
+  height:46px;width: 380px;
+  
+}
+.wrapper input{
+    margin-left:-50px;
+    position:absolute;
+    margin-top:20px;
+}
+
+#divHinhAnhTimKiem button{
+    position:absolute;top:0;right:0;font-size:16px;border:#dc3333 1px solid;border-radius:0;border-left:none;left: 700px;
+    margin-top:20px;
+    
+}
+
+
+.first-row {
+	border-top: #4d3525 1px solid;
+    border-left: none;
+    border-right: none;
+    border-bottom: none;
+    padding: 0!important;
+    margin-bottom: 20px;
+    margin-top: 10px;
+}
+
+.second-row {
+	border-top: #4d3525 1px solid;
+    border-left: none;
+    border-right: none;
+    border-bottom: none;
+    padding: 0!important;
+    margin-bottom: 20px;
+        margin-top: 10px;
+}
+
+.third-row {
+	border-top: #4d3525 1px solid;
+    border-left: none;
+    border-right: none;
+    border-bottom: none;
+    padding: 0!important;
+    margin-bottom: 20px;
+    margin-top: 10px;
+}
+.i3col{
+	padding-top: 15px;
+	padding-left: 30px;
+	margin-left: 50px;
+	position: relative;
+}
+.i3col img {
+	border: 0;
+	margin-left: 30px;
+	width: 150px;
+	height: 150px;
+}
+.i3col img:hover {
+	transform:rotateY(180deg);
+}
+.i3col p {
+	padding-left: 30px;
+}
+.i3col a:hover {
+	text-decoration: underline;
+	color: gold;
+}
+.i3col u {
+	padding-left: 30px;
+}
+.i3col button {
+	color: red;font-size:16px;border:#dc3333 1px solid;border-radius:0;border-left:none;
+	width:50px;height:24px;
+}
+.i3col button:hover{
+	text-decoration: underline;
+}
+.footer-menu ul .submenu{
+	display: inline-table;
+	padding-left: 80px;
+}
+
+.txt{
+	color: red;
+	font-size: 30px;
+}
+.menu-content{
+	float: left;
+	height: 850px;
+	width: 201px;
+	background: url(../images/content-bg.png);
+}
+.menu-content ul li a {
+	font-size: 30px;
+	color: white;
+	padding-left: 10px;
+	line-height: 1.5;
+}
+.menu-content ul li a:hover {
+	text-decoration: underline;
+	color: red;
+}
+#footer {
+	float: left;
+}
+.menutitle {
+	line-height: 1.5;
+	font-size: 25px;
+}
+.submenu ul li a:hover {
+	color: red;
+}
+.submenu a{
+	color: black;
+}
+
+.content {
+	height: 850px;
+}
+.Dongia a{
+    color: red;
+}
+.Dongia a:hover{
+    text-decoration: underline;
+}
+.TenGiay a {
+    color: red;
+}
+.TenGiay a:hover{
+    text-decoration: underline;
+}
+.product-info {
+float: right;
+width: 50%;
+color: red;
+font-size: 30px;
+line-height: 1.5;
+}
+.product-info button {
+	color: red;
+	border: 1px solid red;
+	background-color: white;
+	height: 50px;
+	width: 80px;
+    float:right;
+    margin-top:-30%;
+    margin-right:20px;
+}
+.chitietsp {
+    float: left;
+	width: 50%;
+    
+}
+.chitietsp a {
+	padding-left: 50px;
+    
+}
+.chitietsp img{
+    width:280px;
+    height:300px;
+    float:left;
+    
+}
+#product
+{
+    background-color:white;
+    margin-top:50px;
+    height:300px;
+}

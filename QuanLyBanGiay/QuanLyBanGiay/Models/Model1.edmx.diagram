@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="4390b7e113ae4668baa846eedfbebabe" Name="Diagram1">
+        <EntityTypeShape EntityType="QLGModel.CTHDB" Width="1.5" PointX="3" PointY="7" IsExpanded="true" />
+        <EntityTypeShape EntityType="QLGModel.CTHDN" Width="1.5" PointX="6" PointY="7" IsExpanded="true" />
+        <EntityTypeShape EntityType="QLGModel.DOITRA" Width="1.5" PointX="3" PointY="2.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="QLGModel.DONHANG" Width="1.5" PointX="3" PointY="10.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="QLGModel.GIAY" Width="1.5" PointX="0.75" PointY="6.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="QLGModel.HDB" Width="1.5" PointX="0.75" PointY="1.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="QLGModel.HDN" Width="1.5" PointX="3.75" PointY="17" IsExpanded="true" />
+        <EntityTypeShape EntityType="QLGModel.KHACHHANG" Width="1.5" PointX="0.75" PointY="11.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="QLGModel.LOAITHE" Width="1.5" PointX="3.75" PointY="21.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="QLGModel.NCC" Width="1.5" PointX="1.5" PointY="15.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="QLGModel.NHANVIEN" Width="1.5" PointX="1.5" PointY="18.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="QLGModel.THEKH" Width="1.5" PointX="6" PointY="11.875" IsExpanded="true" />
+        <AssociationConnector Association="QLGModel.fk_CTHDB_IDGIAY" ManuallyRouted="false" />
+        <AssociationConnector Association="QLGModel.fk_CTHDB_MaHDB" ManuallyRouted="false" />
+        <AssociationConnector Association="QLGModel.fk_CTHDN_IDGIAY" ManuallyRouted="false" />
+        <AssociationConnector Association="QLGModel.fk_CTHDN_MaHDN" ManuallyRouted="false" />
+        <AssociationConnector Association="QLGModel.fk_DOITRA_IDGIAY" ManuallyRouted="false" />
+        <AssociationConnector Association="QLGModel.fk_DOITRA_IDKH" ManuallyRouted="false" />
+        <AssociationConnector Association="QLGModel.fk_DOITRA_MaHDB" ManuallyRouted="false" />
+        <AssociationConnector Association="QLGModel.fk_DONHANG_IDGIAY" ManuallyRouted="false" />
+        <AssociationConnector Association="QLGModel.fk_DONHANG_IDKH" ManuallyRouted="false" />
+        <AssociationConnector Association="QLGModel.fk_DONHANG_IDNV" ManuallyRouted="false" />
+        <AssociationConnector Association="QLGModel.fk_HDN_IDNCC" ManuallyRouted="false" />
+        <AssociationConnector Association="QLGModel.fk_HDN_IDNV" ManuallyRouted="false" />
+        <AssociationConnector Association="QLGModel.fk_THEKH_IDKH" ManuallyRouted="false" />
+        <AssociationConnector Association="QLGModel.fk_THEKH_MaLoai" ManuallyRouted="false" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>

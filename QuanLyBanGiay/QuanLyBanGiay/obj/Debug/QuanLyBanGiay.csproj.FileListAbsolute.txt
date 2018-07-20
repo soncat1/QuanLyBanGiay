@@ -1,0 +1,176 @@
+E:\Bai tap lop\ASP\QuanLyBanGiay\QuanLyBanGiay\bin\QuanLyBanGiay.dll.config
+E:\Bai tap lop\ASP\QuanLyBanGiay\QuanLyBanGiay\bin\QuanLyBanGiay.dll
+E:\Bai tap lop\ASP\QuanLyBanGiay\QuanLyBanGiay\bin\QuanLyBanGiay.pdb
+E:\Bai tap lop\ASP\QuanLyBanGiay\QuanLyBanGiay\bin\Antlr3.Runtime.dll
+E:\Bai tap lop\ASP\QuanLyBanGiay\QuanLyBanGiay\bin\EntityFramework.dll
+E:\Bai tap lop\ASP\QuanLyBanGiay\QuanLyBanGiay\bin\EntityFramework.SqlServer.dll
+E:\Bai tap lop\ASP\QuanLyBanGiay\QuanLyBanGiay\bin\Microsoft.AspNet.Identity.Core.dll
+E:\Bai tap lop\ASP\QuanLyBanGiay\QuanLyBanGiay\bin\Microsoft.AspNet.Identity.EntityFramework.dll
+E:\Bai tap lop\ASP\QuanLyBanGiay\QuanLyBanGiay\bin\Microsoft.AspNet.Identity.Owin.dll
+E:\Bai tap lop\ASP\QuanLyBanGiay\QuanLyBanGiay\bin\Microsoft.Owin.dll
+E:\Bai tap lop\ASP\QuanLyBanGiay\QuanLyBanGiay\bin\Microsoft.Owin.Host.SystemWeb.dll
+E:\Bai tap lop\ASP\QuanLyBanGiay\QuanLyBanGiay\bin\Microsoft.Owin.Security.Cookies.dll
+E:\Bai tap lop\ASP\QuanLyBanGiay\QuanLyBanGiay\bin\Microsoft.Owin.Security.dll
+E:\Bai tap lop\ASP\QuanLyBanGiay\QuanLyBanGiay\bin\Microsoft.Owin.Security.Facebook.dll
+E:\Bai tap lop\ASP\QuanLyBanGiay\QuanLyBanGiay\bin\Microsoft.Owin.Security.Google.dll
+E:\Bai tap lop\ASP\QuanLyBanGiay\QuanLyBanGiay\bin\Microsoft.Owin.Security.MicrosoftAccount.dll
+E:\Bai tap lop\ASP\QuanLyBanGiay\QuanLyBanGiay\bin\Microsoft.Owin.Security.OAuth.dll
+E:\Bai tap lop\ASP\QuanLyBanGiay\QuanLyBanGiay\bin\Microsoft.Owin.Security.Twitter.dll
+E:\Bai tap lop\ASP\QuanLyBanGiay\QuanLyBanGiay\bin\Microsoft.Web.Infrastructure.dll
+E:\Bai tap lop\ASP\QuanLyBanGiay\QuanLyBanGiay\bin\Newtonsoft.Json.dll
+E:\Bai tap lop\ASP\QuanLyBanGiay\QuanLyBanGiay\bin\Owin.dll
+E:\Bai tap lop\ASP\QuanLyBanGiay\QuanLyBanGiay\bin\System.Web.Helpers.dll
+E:\Bai tap lop\ASP\QuanLyBanGiay\QuanLyBanGiay\bin\System.Web.Mvc.dll
+E:\Bai tap lop\ASP\QuanLyBanGiay\QuanLyBanGiay\bin\System.Web.Optimization.dll
+E:\Bai tap lop\ASP\QuanLyBanGiay\QuanLyBanGiay\bin\System.Web.Razor.dll
+E:\Bai tap lop\ASP\QuanLyBanGiay\QuanLyBanGiay\bin\System.Web.WebPages.Deployment.dll
+E:\Bai tap lop\ASP\QuanLyBanGiay\QuanLyBanGiay\bin\System.Web.WebPages.dll
+E:\Bai tap lop\ASP\QuanLyBanGiay\QuanLyBanGiay\bin\System.Web.WebPages.Razor.dll
+E:\Bai tap lop\ASP\QuanLyBanGiay\QuanLyBanGiay\bin\WebGrease.dll
+E:\Bai tap lop\ASP\QuanLyBanGiay\QuanLyBanGiay\bin\System.Web.Helpers.xml
+E:\Bai tap lop\ASP\QuanLyBanGiay\QuanLyBanGiay\bin\System.Web.Mvc.xml
+E:\Bai tap lop\ASP\QuanLyBanGiay\QuanLyBanGiay\bin\System.Web.Optimization.xml
+E:\Bai tap lop\ASP\QuanLyBanGiay\QuanLyBanGiay\bin\System.Web.Razor.xml
+E:\Bai tap lop\ASP\QuanLyBanGiay\QuanLyBanGiay\bin\System.Web.WebPages.xml
+E:\Bai tap lop\ASP\QuanLyBanGiay\QuanLyBanGiay\bin\System.Web.WebPages.Deployment.xml
+E:\Bai tap lop\ASP\QuanLyBanGiay\QuanLyBanGiay\bin\System.Web.WebPages.Razor.xml
+E:\Bai tap lop\ASP\QuanLyBanGiay\QuanLyBanGiay\bin\Newtonsoft.Json.xml
+E:\Bai tap lop\ASP\QuanLyBanGiay\QuanLyBanGiay\bin\Antlr3.Runtime.pdb
+E:\Bai tap lop\ASP\QuanLyBanGiay\QuanLyBanGiay\bin\EntityFramework.xml
+E:\Bai tap lop\ASP\QuanLyBanGiay\QuanLyBanGiay\bin\EntityFramework.SqlServer.xml
+E:\Bai tap lop\ASP\QuanLyBanGiay\QuanLyBanGiay\bin\Microsoft.AspNet.Identity.Core.xml
+E:\Bai tap lop\ASP\QuanLyBanGiay\QuanLyBanGiay\bin\Microsoft.AspNet.Identity.Owin.xml
+E:\Bai tap lop\ASP\QuanLyBanGiay\QuanLyBanGiay\bin\Microsoft.AspNet.Identity.EntityFramework.xml
+E:\Bai tap lop\ASP\QuanLyBanGiay\QuanLyBanGiay\bin\Microsoft.Owin.xml
+E:\Bai tap lop\ASP\QuanLyBanGiay\QuanLyBanGiay\bin\Microsoft.Owin.Host.SystemWeb.xml
+E:\Bai tap lop\ASP\QuanLyBanGiay\QuanLyBanGiay\bin\Microsoft.Owin.Security.xml
+E:\Bai tap lop\ASP\QuanLyBanGiay\QuanLyBanGiay\bin\Microsoft.Owin.Security.Facebook.xml
+E:\Bai tap lop\ASP\QuanLyBanGiay\QuanLyBanGiay\bin\Microsoft.Owin.Security.Cookies.xml
+E:\Bai tap lop\ASP\QuanLyBanGiay\QuanLyBanGiay\bin\Microsoft.Owin.Security.OAuth.xml
+E:\Bai tap lop\ASP\QuanLyBanGiay\QuanLyBanGiay\bin\Microsoft.Owin.Security.Google.xml
+E:\Bai tap lop\ASP\QuanLyBanGiay\QuanLyBanGiay\bin\Microsoft.Owin.Security.Twitter.xml
+E:\Bai tap lop\ASP\QuanLyBanGiay\QuanLyBanGiay\bin\Microsoft.Owin.Security.MicrosoftAccount.xml
+E:\Bai tap lop\ASP\QuanLyBanGiay\QuanLyBanGiay\obj\Debug\QuanLyBanGiay.dll
+E:\Bai tap lop\ASP\QuanLyBanGiay\QuanLyBanGiay\obj\Debug\QuanLyBanGiay.pdb
+E:\Bai tap lop\ASP\QuanLyBanGiay\QuanLyBanGiay\bin\PagedList.dll
+E:\Bai tap lop\ASP\QuanLyBanGiay\QuanLyBanGiay\bin\PagedList.Mvc.dll
+E:\Bai tap lop\ASP\QuanLyBanGiay\QuanLyBanGiay\bin\PagedList.xml
+E:\Bai tap lop\ASP\QuanLyBanGiay\QuanLyBanGiay\bin\PagedList.Mvc.xml
+E:\Bai tap lop\ASP\QuanLyBanGiay\QuanLyBanGiay\obj\Debug\QuanLyBanGiay.csprojResolveAssemblyReference.cache
+C:\Users\HongSon\Desktop\DoHongSon_LuongTuanLinh\QuanLyBanGiay\QuanLyBanGiay\bin\QuanLyBanGiay.dll.config
+C:\Users\HongSon\Desktop\DoHongSon_LuongTuanLinh\QuanLyBanGiay\QuanLyBanGiay\bin\QuanLyBanGiay.dll
+C:\Users\HongSon\Desktop\DoHongSon_LuongTuanLinh\QuanLyBanGiay\QuanLyBanGiay\bin\QuanLyBanGiay.pdb
+C:\Users\HongSon\Desktop\DoHongSon_LuongTuanLinh\QuanLyBanGiay\QuanLyBanGiay\bin\Antlr3.Runtime.dll
+C:\Users\HongSon\Desktop\DoHongSon_LuongTuanLinh\QuanLyBanGiay\QuanLyBanGiay\bin\EntityFramework.dll
+C:\Users\HongSon\Desktop\DoHongSon_LuongTuanLinh\QuanLyBanGiay\QuanLyBanGiay\bin\EntityFramework.SqlServer.dll
+C:\Users\HongSon\Desktop\DoHongSon_LuongTuanLinh\QuanLyBanGiay\QuanLyBanGiay\bin\Microsoft.AspNet.Identity.Core.dll
+C:\Users\HongSon\Desktop\DoHongSon_LuongTuanLinh\QuanLyBanGiay\QuanLyBanGiay\bin\Microsoft.AspNet.Identity.EntityFramework.dll
+C:\Users\HongSon\Desktop\DoHongSon_LuongTuanLinh\QuanLyBanGiay\QuanLyBanGiay\bin\Microsoft.AspNet.Identity.Owin.dll
+C:\Users\HongSon\Desktop\DoHongSon_LuongTuanLinh\QuanLyBanGiay\QuanLyBanGiay\bin\Microsoft.Owin.dll
+C:\Users\HongSon\Desktop\DoHongSon_LuongTuanLinh\QuanLyBanGiay\QuanLyBanGiay\bin\Microsoft.Owin.Host.SystemWeb.dll
+C:\Users\HongSon\Desktop\DoHongSon_LuongTuanLinh\QuanLyBanGiay\QuanLyBanGiay\bin\Microsoft.Owin.Security.Cookies.dll
+C:\Users\HongSon\Desktop\DoHongSon_LuongTuanLinh\QuanLyBanGiay\QuanLyBanGiay\bin\Microsoft.Owin.Security.dll
+C:\Users\HongSon\Desktop\DoHongSon_LuongTuanLinh\QuanLyBanGiay\QuanLyBanGiay\bin\Microsoft.Owin.Security.Facebook.dll
+C:\Users\HongSon\Desktop\DoHongSon_LuongTuanLinh\QuanLyBanGiay\QuanLyBanGiay\bin\Microsoft.Owin.Security.Google.dll
+C:\Users\HongSon\Desktop\DoHongSon_LuongTuanLinh\QuanLyBanGiay\QuanLyBanGiay\bin\Microsoft.Owin.Security.MicrosoftAccount.dll
+C:\Users\HongSon\Desktop\DoHongSon_LuongTuanLinh\QuanLyBanGiay\QuanLyBanGiay\bin\Microsoft.Owin.Security.OAuth.dll
+C:\Users\HongSon\Desktop\DoHongSon_LuongTuanLinh\QuanLyBanGiay\QuanLyBanGiay\bin\Microsoft.Owin.Security.Twitter.dll
+C:\Users\HongSon\Desktop\DoHongSon_LuongTuanLinh\QuanLyBanGiay\QuanLyBanGiay\bin\Microsoft.Web.Infrastructure.dll
+C:\Users\HongSon\Desktop\DoHongSon_LuongTuanLinh\QuanLyBanGiay\QuanLyBanGiay\bin\Newtonsoft.Json.dll
+C:\Users\HongSon\Desktop\DoHongSon_LuongTuanLinh\QuanLyBanGiay\QuanLyBanGiay\bin\Owin.dll
+C:\Users\HongSon\Desktop\DoHongSon_LuongTuanLinh\QuanLyBanGiay\QuanLyBanGiay\bin\PagedList.dll
+C:\Users\HongSon\Desktop\DoHongSon_LuongTuanLinh\QuanLyBanGiay\QuanLyBanGiay\bin\PagedList.Mvc.dll
+C:\Users\HongSon\Desktop\DoHongSon_LuongTuanLinh\QuanLyBanGiay\QuanLyBanGiay\bin\System.Web.Helpers.dll
+C:\Users\HongSon\Desktop\DoHongSon_LuongTuanLinh\QuanLyBanGiay\QuanLyBanGiay\bin\System.Web.Mvc.dll
+C:\Users\HongSon\Desktop\DoHongSon_LuongTuanLinh\QuanLyBanGiay\QuanLyBanGiay\bin\System.Web.Optimization.dll
+C:\Users\HongSon\Desktop\DoHongSon_LuongTuanLinh\QuanLyBanGiay\QuanLyBanGiay\bin\System.Web.Razor.dll
+C:\Users\HongSon\Desktop\DoHongSon_LuongTuanLinh\QuanLyBanGiay\QuanLyBanGiay\bin\System.Web.WebPages.Deployment.dll
+C:\Users\HongSon\Desktop\DoHongSon_LuongTuanLinh\QuanLyBanGiay\QuanLyBanGiay\bin\System.Web.WebPages.dll
+C:\Users\HongSon\Desktop\DoHongSon_LuongTuanLinh\QuanLyBanGiay\QuanLyBanGiay\bin\System.Web.WebPages.Razor.dll
+C:\Users\HongSon\Desktop\DoHongSon_LuongTuanLinh\QuanLyBanGiay\QuanLyBanGiay\bin\WebGrease.dll
+C:\Users\HongSon\Desktop\DoHongSon_LuongTuanLinh\QuanLyBanGiay\QuanLyBanGiay\bin\PagedList.xml
+C:\Users\HongSon\Desktop\DoHongSon_LuongTuanLinh\QuanLyBanGiay\QuanLyBanGiay\bin\PagedList.Mvc.xml
+C:\Users\HongSon\Desktop\DoHongSon_LuongTuanLinh\QuanLyBanGiay\QuanLyBanGiay\bin\System.Web.Helpers.xml
+C:\Users\HongSon\Desktop\DoHongSon_LuongTuanLinh\QuanLyBanGiay\QuanLyBanGiay\bin\System.Web.Mvc.xml
+C:\Users\HongSon\Desktop\DoHongSon_LuongTuanLinh\QuanLyBanGiay\QuanLyBanGiay\bin\System.Web.Optimization.xml
+C:\Users\HongSon\Desktop\DoHongSon_LuongTuanLinh\QuanLyBanGiay\QuanLyBanGiay\bin\System.Web.Razor.xml
+C:\Users\HongSon\Desktop\DoHongSon_LuongTuanLinh\QuanLyBanGiay\QuanLyBanGiay\bin\System.Web.WebPages.xml
+C:\Users\HongSon\Desktop\DoHongSon_LuongTuanLinh\QuanLyBanGiay\QuanLyBanGiay\bin\System.Web.WebPages.Deployment.xml
+C:\Users\HongSon\Desktop\DoHongSon_LuongTuanLinh\QuanLyBanGiay\QuanLyBanGiay\bin\System.Web.WebPages.Razor.xml
+C:\Users\HongSon\Desktop\DoHongSon_LuongTuanLinh\QuanLyBanGiay\QuanLyBanGiay\bin\Newtonsoft.Json.xml
+C:\Users\HongSon\Desktop\DoHongSon_LuongTuanLinh\QuanLyBanGiay\QuanLyBanGiay\bin\Antlr3.Runtime.pdb
+C:\Users\HongSon\Desktop\DoHongSon_LuongTuanLinh\QuanLyBanGiay\QuanLyBanGiay\bin\EntityFramework.xml
+C:\Users\HongSon\Desktop\DoHongSon_LuongTuanLinh\QuanLyBanGiay\QuanLyBanGiay\bin\EntityFramework.SqlServer.xml
+C:\Users\HongSon\Desktop\DoHongSon_LuongTuanLinh\QuanLyBanGiay\QuanLyBanGiay\bin\Microsoft.AspNet.Identity.Core.xml
+C:\Users\HongSon\Desktop\DoHongSon_LuongTuanLinh\QuanLyBanGiay\QuanLyBanGiay\bin\Microsoft.AspNet.Identity.Owin.xml
+C:\Users\HongSon\Desktop\DoHongSon_LuongTuanLinh\QuanLyBanGiay\QuanLyBanGiay\bin\Microsoft.AspNet.Identity.EntityFramework.xml
+C:\Users\HongSon\Desktop\DoHongSon_LuongTuanLinh\QuanLyBanGiay\QuanLyBanGiay\bin\Microsoft.Owin.xml
+C:\Users\HongSon\Desktop\DoHongSon_LuongTuanLinh\QuanLyBanGiay\QuanLyBanGiay\bin\Microsoft.Owin.Host.SystemWeb.xml
+C:\Users\HongSon\Desktop\DoHongSon_LuongTuanLinh\QuanLyBanGiay\QuanLyBanGiay\bin\Microsoft.Owin.Security.xml
+C:\Users\HongSon\Desktop\DoHongSon_LuongTuanLinh\QuanLyBanGiay\QuanLyBanGiay\bin\Microsoft.Owin.Security.Facebook.xml
+C:\Users\HongSon\Desktop\DoHongSon_LuongTuanLinh\QuanLyBanGiay\QuanLyBanGiay\bin\Microsoft.Owin.Security.Cookies.xml
+C:\Users\HongSon\Desktop\DoHongSon_LuongTuanLinh\QuanLyBanGiay\QuanLyBanGiay\bin\Microsoft.Owin.Security.OAuth.xml
+C:\Users\HongSon\Desktop\DoHongSon_LuongTuanLinh\QuanLyBanGiay\QuanLyBanGiay\bin\Microsoft.Owin.Security.Google.xml
+C:\Users\HongSon\Desktop\DoHongSon_LuongTuanLinh\QuanLyBanGiay\QuanLyBanGiay\bin\Microsoft.Owin.Security.Twitter.xml
+C:\Users\HongSon\Desktop\DoHongSon_LuongTuanLinh\QuanLyBanGiay\QuanLyBanGiay\bin\Microsoft.Owin.Security.MicrosoftAccount.xml
+C:\Users\HongSon\Desktop\DoHongSon_LuongTuanLinh\QuanLyBanGiay\QuanLyBanGiay\obj\Debug\QuanLyBanGiay.dll
+C:\Users\HongSon\Desktop\DoHongSon_LuongTuanLinh\QuanLyBanGiay\QuanLyBanGiay\obj\Debug\QuanLyBanGiay.pdb
+E:\Project\QuanLyBanGiay\QuanLyBanGiay\QuanLyBanGiay\bin\QuanLyBanGiay.dll.config
+E:\Project\QuanLyBanGiay\QuanLyBanGiay\QuanLyBanGiay\bin\QuanLyBanGiay.dll
+E:\Project\QuanLyBanGiay\QuanLyBanGiay\QuanLyBanGiay\bin\QuanLyBanGiay.pdb
+E:\Project\QuanLyBanGiay\QuanLyBanGiay\QuanLyBanGiay\bin\Antlr3.Runtime.dll
+E:\Project\QuanLyBanGiay\QuanLyBanGiay\QuanLyBanGiay\bin\EntityFramework.dll
+E:\Project\QuanLyBanGiay\QuanLyBanGiay\QuanLyBanGiay\bin\EntityFramework.SqlServer.dll
+E:\Project\QuanLyBanGiay\QuanLyBanGiay\QuanLyBanGiay\bin\Microsoft.AspNet.Identity.Core.dll
+E:\Project\QuanLyBanGiay\QuanLyBanGiay\QuanLyBanGiay\bin\Microsoft.AspNet.Identity.EntityFramework.dll
+E:\Project\QuanLyBanGiay\QuanLyBanGiay\QuanLyBanGiay\bin\Microsoft.AspNet.Identity.Owin.dll
+E:\Project\QuanLyBanGiay\QuanLyBanGiay\QuanLyBanGiay\bin\Microsoft.Owin.dll
+E:\Project\QuanLyBanGiay\QuanLyBanGiay\QuanLyBanGiay\bin\Microsoft.Owin.Host.SystemWeb.dll
+E:\Project\QuanLyBanGiay\QuanLyBanGiay\QuanLyBanGiay\bin\Microsoft.Owin.Security.Cookies.dll
+E:\Project\QuanLyBanGiay\QuanLyBanGiay\QuanLyBanGiay\bin\Microsoft.Owin.Security.dll
+E:\Project\QuanLyBanGiay\QuanLyBanGiay\QuanLyBanGiay\bin\Microsoft.Owin.Security.Facebook.dll
+E:\Project\QuanLyBanGiay\QuanLyBanGiay\QuanLyBanGiay\bin\Microsoft.Owin.Security.Google.dll
+E:\Project\QuanLyBanGiay\QuanLyBanGiay\QuanLyBanGiay\bin\Microsoft.Owin.Security.MicrosoftAccount.dll
+E:\Project\QuanLyBanGiay\QuanLyBanGiay\QuanLyBanGiay\bin\Microsoft.Owin.Security.OAuth.dll
+E:\Project\QuanLyBanGiay\QuanLyBanGiay\QuanLyBanGiay\bin\Microsoft.Owin.Security.Twitter.dll
+E:\Project\QuanLyBanGiay\QuanLyBanGiay\QuanLyBanGiay\bin\Microsoft.Web.Infrastructure.dll
+E:\Project\QuanLyBanGiay\QuanLyBanGiay\QuanLyBanGiay\bin\Newtonsoft.Json.dll
+E:\Project\QuanLyBanGiay\QuanLyBanGiay\QuanLyBanGiay\bin\Owin.dll
+E:\Project\QuanLyBanGiay\QuanLyBanGiay\QuanLyBanGiay\bin\PagedList.dll
+E:\Project\QuanLyBanGiay\QuanLyBanGiay\QuanLyBanGiay\bin\PagedList.Mvc.dll
+E:\Project\QuanLyBanGiay\QuanLyBanGiay\QuanLyBanGiay\bin\System.Web.Helpers.dll
+E:\Project\QuanLyBanGiay\QuanLyBanGiay\QuanLyBanGiay\bin\System.Web.Mvc.dll
+E:\Project\QuanLyBanGiay\QuanLyBanGiay\QuanLyBanGiay\bin\System.Web.Optimization.dll
+E:\Project\QuanLyBanGiay\QuanLyBanGiay\QuanLyBanGiay\bin\System.Web.Razor.dll
+E:\Project\QuanLyBanGiay\QuanLyBanGiay\QuanLyBanGiay\bin\System.Web.WebPages.Deployment.dll
+E:\Project\QuanLyBanGiay\QuanLyBanGiay\QuanLyBanGiay\bin\System.Web.WebPages.dll
+E:\Project\QuanLyBanGiay\QuanLyBanGiay\QuanLyBanGiay\bin\System.Web.WebPages.Razor.dll
+E:\Project\QuanLyBanGiay\QuanLyBanGiay\QuanLyBanGiay\bin\WebGrease.dll
+E:\Project\QuanLyBanGiay\QuanLyBanGiay\QuanLyBanGiay\bin\PagedList.xml
+E:\Project\QuanLyBanGiay\QuanLyBanGiay\QuanLyBanGiay\bin\PagedList.Mvc.xml
+E:\Project\QuanLyBanGiay\QuanLyBanGiay\QuanLyBanGiay\bin\System.Web.Helpers.xml
+E:\Project\QuanLyBanGiay\QuanLyBanGiay\QuanLyBanGiay\bin\System.Web.Mvc.xml
+E:\Project\QuanLyBanGiay\QuanLyBanGiay\QuanLyBanGiay\bin\System.Web.Optimization.xml
+E:\Project\QuanLyBanGiay\QuanLyBanGiay\QuanLyBanGiay\bin\System.Web.Razor.xml
+E:\Project\QuanLyBanGiay\QuanLyBanGiay\QuanLyBanGiay\bin\System.Web.WebPages.xml
+E:\Project\QuanLyBanGiay\QuanLyBanGiay\QuanLyBanGiay\bin\System.Web.WebPages.Deployment.xml
+E:\Project\QuanLyBanGiay\QuanLyBanGiay\QuanLyBanGiay\bin\System.Web.WebPages.Razor.xml
+E:\Project\QuanLyBanGiay\QuanLyBanGiay\QuanLyBanGiay\bin\Newtonsoft.Json.xml
+E:\Project\QuanLyBanGiay\QuanLyBanGiay\QuanLyBanGiay\bin\Antlr3.Runtime.pdb
+E:\Project\QuanLyBanGiay\QuanLyBanGiay\QuanLyBanGiay\bin\EntityFramework.xml
+E:\Project\QuanLyBanGiay\QuanLyBanGiay\QuanLyBanGiay\bin\EntityFramework.SqlServer.xml
+E:\Project\QuanLyBanGiay\QuanLyBanGiay\QuanLyBanGiay\bin\Microsoft.AspNet.Identity.Core.xml
+E:\Project\QuanLyBanGiay\QuanLyBanGiay\QuanLyBanGiay\bin\Microsoft.AspNet.Identity.Owin.xml
+E:\Project\QuanLyBanGiay\QuanLyBanGiay\QuanLyBanGiay\bin\Microsoft.AspNet.Identity.EntityFramework.xml
+E:\Project\QuanLyBanGiay\QuanLyBanGiay\QuanLyBanGiay\bin\Microsoft.Owin.xml
+E:\Project\QuanLyBanGiay\QuanLyBanGiay\QuanLyBanGiay\bin\Microsoft.Owin.Host.SystemWeb.xml
+E:\Project\QuanLyBanGiay\QuanLyBanGiay\QuanLyBanGiay\bin\Microsoft.Owin.Security.xml
+E:\Project\QuanLyBanGiay\QuanLyBanGiay\QuanLyBanGiay\bin\Microsoft.Owin.Security.Facebook.xml
+E:\Project\QuanLyBanGiay\QuanLyBanGiay\QuanLyBanGiay\bin\Microsoft.Owin.Security.Cookies.xml
+E:\Project\QuanLyBanGiay\QuanLyBanGiay\QuanLyBanGiay\bin\Microsoft.Owin.Security.OAuth.xml
+E:\Project\QuanLyBanGiay\QuanLyBanGiay\QuanLyBanGiay\bin\Microsoft.Owin.Security.Google.xml
+E:\Project\QuanLyBanGiay\QuanLyBanGiay\QuanLyBanGiay\bin\Microsoft.Owin.Security.Twitter.xml
+E:\Project\QuanLyBanGiay\QuanLyBanGiay\QuanLyBanGiay\bin\Microsoft.Owin.Security.MicrosoftAccount.xml
+E:\Project\QuanLyBanGiay\QuanLyBanGiay\QuanLyBanGiay\obj\Debug\QuanLyBanGiay.csprojResolveAssemblyReference.cache
+E:\Project\QuanLyBanGiay\QuanLyBanGiay\QuanLyBanGiay\obj\Debug\QuanLyBanGiay.dll
+E:\Project\QuanLyBanGiay\QuanLyBanGiay\QuanLyBanGiay\obj\Debug\QuanLyBanGiay.pdb

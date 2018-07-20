@@ -1,0 +1,430 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="QLGModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+  <EntityType Name="CTHDB">
+    <Key>
+      <PropertyRef Name="IDB" />
+    </Key>
+    <Property Name="IDB" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="MaHDB" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="IDGIAY" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="Donvi" Type="String" MaxLength="10" FixedLength="false" Unicode="false" />
+    <Property Name="DongiaB" Type="Int32" />
+    <Property Name="Soluong" Type="Int32" />
+    <Property Name="Thanhtien" Type="Int32" />
+    <NavigationProperty Name="GIAY" Relationship="Self.fk_CTHDB_IDGIAY" FromRole="CTHDB" ToRole="GIAY" />
+    <NavigationProperty Name="HDB" Relationship="Self.fk_CTHDB_MaHDB" FromRole="CTHDB" ToRole="HDB" />
+  </EntityType>
+  <EntityType Name="CTHDN">
+    <Key>
+      <PropertyRef Name="IDN" />
+    </Key>
+    <Property Name="IDN" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="MaHDN" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="IDGIAY" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="Donvi" Type="String" MaxLength="10" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="DongiaN" Type="Int32" />
+    <Property Name="Soluong" Type="Int32" />
+    <Property Name="Thanhtien" Type="Int32" />
+    <NavigationProperty Name="GIAY" Relationship="Self.fk_CTHDN_IDGIAY" FromRole="CTHDN" ToRole="GIAY" />
+    <NavigationProperty Name="HDN" Relationship="Self.fk_CTHDN_MaHDN" FromRole="CTHDN" ToRole="HDN" />
+  </EntityType>
+  <EntityType Name="DOITRA">
+    <Key>
+      <PropertyRef Name="MaDTra" />
+    </Key>
+    <Property Name="MaDTra" Type="String" MaxLength="10" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="IDKH" Type="String" MaxLength="10" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="IDGIAY" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="MaHDB" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="Soluong" Type="Int32" />
+    <Property Name="NgayDoitra" Type="DateTime" Precision="3" />
+    <Property Name="Xuly" Type="String" MaxLength="10" FixedLength="false" Unicode="true" Nullable="false" />
+    <NavigationProperty Name="GIAY" Relationship="Self.fk_DOITRA_IDGIAY" FromRole="DOITRA" ToRole="GIAY" />
+    <NavigationProperty Name="KHACHHANG" Relationship="Self.fk_DOITRA_IDKH" FromRole="DOITRA" ToRole="KHACHHANG" />
+    <NavigationProperty Name="HDB" Relationship="Self.fk_DOITRA_MaHDB" FromRole="DOITRA" ToRole="HDB" />
+  </EntityType>
+  <EntityType Name="DONHANG">
+    <Key>
+      <PropertyRef Name="MaDDH" />
+    </Key>
+    <Property Name="MaDDH" Type="String" MaxLength="10" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="IDKH" Type="String" MaxLength="10" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="IDGIAY" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="IDNV" Type="String" MaxLength="10" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="Soluong" Type="Int32" />
+    <Property Name="NgayDat" Type="DateTime" Precision="3" />
+    <Property Name="NgayGH" Type="DateTime" Precision="3" />
+    <NavigationProperty Name="GIAY" Relationship="Self.fk_DONHANG_IDGIAY" FromRole="DONHANG" ToRole="GIAY" />
+    <NavigationProperty Name="KHACHHANG" Relationship="Self.fk_DONHANG_IDKH" FromRole="DONHANG" ToRole="KHACHHANG" />
+    <NavigationProperty Name="NHANVIEN" Relationship="Self.fk_DONHANG_IDNV" FromRole="DONHANG" ToRole="NHANVIEN" />
+  </EntityType>
+  <EntityType Name="GIAY">
+    <Key>
+      <PropertyRef Name="IDGIAY" />
+    </Key>
+    <Property Name="IDGIAY" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="Tengiay" Type="String" MaxLength="20" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="Loaigiay" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="Soluong" Type="Int32" />
+    <Property Name="Size" Type="String" MaxLength="10" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="Mausac" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="IDNCC" Type="String" MaxLength="10" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="DongiaN" Type="Int32" />
+    <Property Name="DongiaB" Type="Int32" />
+    <Property Name="Anh" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+    <NavigationProperty Name="CTHDBs" Relationship="Self.fk_CTHDB_IDGIAY" FromRole="GIAY" ToRole="CTHDB" />
+    <NavigationProperty Name="CTHDNs" Relationship="Self.fk_CTHDN_IDGIAY" FromRole="GIAY" ToRole="CTHDN" />
+    <NavigationProperty Name="DOITRAs" Relationship="Self.fk_DOITRA_IDGIAY" FromRole="GIAY" ToRole="DOITRA" />
+    <NavigationProperty Name="DONHANGs" Relationship="Self.fk_DONHANG_IDGIAY" FromRole="GIAY" ToRole="DONHANG" />
+  </EntityType>
+  <EntityType Name="HDB">
+    <Key>
+      <PropertyRef Name="MaHDB" />
+    </Key>
+    <Property Name="MaHDB" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="Ngaylap" Type="DateTime" Precision="3" />
+    <Property Name="MaThe" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="IDKH" Type="String" MaxLength="10" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="Chietkhau" Type="Int32" />
+    <Property Name="Thanhtien" Type="Int32" />
+    <NavigationProperty Name="CTHDBs" Relationship="Self.fk_CTHDB_MaHDB" FromRole="HDB" ToRole="CTHDB" />
+    <NavigationProperty Name="DOITRAs" Relationship="Self.fk_DOITRA_MaHDB" FromRole="HDB" ToRole="DOITRA" />
+  </EntityType>
+  <EntityType Name="HDN">
+    <Key>
+      <PropertyRef Name="MaHDN" />
+    </Key>
+    <Property Name="MaHDN" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="Ngaylap" Type="DateTime" Nullable="false" Precision="3" />
+    <Property Name="IDNV" Type="String" MaxLength="10" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="IDNCC" Type="String" MaxLength="10" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="Thanhtien" Type="Int32" />
+    <NavigationProperty Name="CTHDNs" Relationship="Self.fk_CTHDN_MaHDN" FromRole="HDN" ToRole="CTHDN" />
+    <NavigationProperty Name="NCC" Relationship="Self.fk_HDN_IDNCC" FromRole="HDN" ToRole="NCC" />
+    <NavigationProperty Name="NHANVIEN" Relationship="Self.fk_HDN_IDNV" FromRole="HDN" ToRole="NHANVIEN" />
+  </EntityType>
+  <EntityType Name="KHACHHANG">
+    <Key>
+      <PropertyRef Name="IDKH" />
+    </Key>
+    <Property Name="IDKH" Type="String" MaxLength="10" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="tenkhachhang" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="gioitinh" Type="Boolean" Nullable="false" />
+    <Property Name="diachi" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="sodienthoai" Type="String" MaxLength="11" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="email" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+    <NavigationProperty Name="DOITRAs" Relationship="Self.fk_DOITRA_IDKH" FromRole="KHACHHANG" ToRole="DOITRA" />
+    <NavigationProperty Name="DONHANGs" Relationship="Self.fk_DONHANG_IDKH" FromRole="KHACHHANG" ToRole="DONHANG" />
+    <NavigationProperty Name="THEKHs" Relationship="Self.fk_THEKH_IDKH" FromRole="KHACHHANG" ToRole="THEKH" />
+  </EntityType>
+  <EntityType Name="LOAITHE">
+    <Key>
+      <PropertyRef Name="MaLoai" />
+    </Key>
+    <Property Name="MaLoai" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="Tenloai" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="DT" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+    <NavigationProperty Name="THEKHs" Relationship="Self.fk_THEKH_MaLoai" FromRole="LOAITHE" ToRole="THEKH" />
+  </EntityType>
+  <EntityType Name="NCC">
+    <Key>
+      <PropertyRef Name="IDNCC" />
+    </Key>
+    <Property Name="IDNCC" Type="String" MaxLength="10" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="TenNCC" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="diachi" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="dienthoai" Type="String" MaxLength="11" FixedLength="false" Unicode="false" Nullable="false" />
+    <NavigationProperty Name="HDNs" Relationship="Self.fk_HDN_IDNCC" FromRole="NCC" ToRole="HDN" />
+  </EntityType>
+  <EntityType Name="NHANVIEN">
+    <Key>
+      <PropertyRef Name="IDNV" />
+    </Key>
+    <Property Name="IDNV" Type="String" MaxLength="10" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="TenNV" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="ngaysinh" Type="DateTime" Precision="0" />
+    <Property Name="cmt" Type="String" MaxLength="12" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="diachi" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="dienthoai" Type="String" MaxLength="11" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="bophan" Type="String" MaxLength="20" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="gioitinh" Type="Boolean" Nullable="false" />
+    <Property Name="taikhoan" Type="String" MaxLength="20" FixedLength="false" Unicode="false" Nullable="false" />
+    <NavigationProperty Name="DONHANGs" Relationship="Self.fk_DONHANG_IDNV" FromRole="NHANVIEN" ToRole="DONHANG" />
+    <NavigationProperty Name="HDNs" Relationship="Self.fk_HDN_IDNV" FromRole="NHANVIEN" ToRole="HDN" />
+  </EntityType>
+  <EntityType Name="THEKH">
+    <Key>
+      <PropertyRef Name="MaThe" />
+    </Key>
+    <Property Name="MaThe" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="IDKH" Type="String" MaxLength="10" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="MaLoai" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="Ngaycap" Type="DateTime" Precision="3" />
+    <NavigationProperty Name="KHACHHANG" Relationship="Self.fk_THEKH_IDKH" FromRole="THEKH" ToRole="KHACHHANG" />
+    <NavigationProperty Name="LOAITHE" Relationship="Self.fk_THEKH_MaLoai" FromRole="THEKH" ToRole="LOAITHE" />
+  </EntityType>
+  <Association Name="fk_CTHDB_IDGIAY">
+    <End Role="GIAY" Type="Self.GIAY" Multiplicity="1">
+      <OnDelete Action="Cascade" />
+    </End>
+    <End Role="CTHDB" Type="Self.CTHDB" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="GIAY">
+        <PropertyRef Name="IDGIAY" />
+      </Principal>
+      <Dependent Role="CTHDB">
+        <PropertyRef Name="IDGIAY" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="fk_CTHDB_MaHDB">
+    <End Role="HDB" Type="Self.HDB" Multiplicity="1">
+      <OnDelete Action="Cascade" />
+    </End>
+    <End Role="CTHDB" Type="Self.CTHDB" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="HDB">
+        <PropertyRef Name="MaHDB" />
+      </Principal>
+      <Dependent Role="CTHDB">
+        <PropertyRef Name="MaHDB" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="fk_CTHDN_IDGIAY">
+    <End Role="GIAY" Type="Self.GIAY" Multiplicity="1">
+      <OnDelete Action="Cascade" />
+    </End>
+    <End Role="CTHDN" Type="Self.CTHDN" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="GIAY">
+        <PropertyRef Name="IDGIAY" />
+      </Principal>
+      <Dependent Role="CTHDN">
+        <PropertyRef Name="IDGIAY" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="fk_CTHDN_MaHDN">
+    <End Role="HDN" Type="Self.HDN" Multiplicity="1">
+      <OnDelete Action="Cascade" />
+    </End>
+    <End Role="CTHDN" Type="Self.CTHDN" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="HDN">
+        <PropertyRef Name="MaHDN" />
+      </Principal>
+      <Dependent Role="CTHDN">
+        <PropertyRef Name="MaHDN" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="fk_DOITRA_IDGIAY">
+    <End Role="GIAY" Type="Self.GIAY" Multiplicity="1">
+      <OnDelete Action="Cascade" />
+    </End>
+    <End Role="DOITRA" Type="Self.DOITRA" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="GIAY">
+        <PropertyRef Name="IDGIAY" />
+      </Principal>
+      <Dependent Role="DOITRA">
+        <PropertyRef Name="IDGIAY" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="fk_DOITRA_IDKH">
+    <End Role="KHACHHANG" Type="Self.KHACHHANG" Multiplicity="1">
+      <OnDelete Action="Cascade" />
+    </End>
+    <End Role="DOITRA" Type="Self.DOITRA" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="KHACHHANG">
+        <PropertyRef Name="IDKH" />
+      </Principal>
+      <Dependent Role="DOITRA">
+        <PropertyRef Name="IDKH" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="fk_DOITRA_MaHDB">
+    <End Role="HDB" Type="Self.HDB" Multiplicity="1">
+      <OnDelete Action="Cascade" />
+    </End>
+    <End Role="DOITRA" Type="Self.DOITRA" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="HDB">
+        <PropertyRef Name="MaHDB" />
+      </Principal>
+      <Dependent Role="DOITRA">
+        <PropertyRef Name="MaHDB" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="fk_DONHANG_IDGIAY">
+    <End Role="GIAY" Type="Self.GIAY" Multiplicity="1">
+      <OnDelete Action="Cascade" />
+    </End>
+    <End Role="DONHANG" Type="Self.DONHANG" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="GIAY">
+        <PropertyRef Name="IDGIAY" />
+      </Principal>
+      <Dependent Role="DONHANG">
+        <PropertyRef Name="IDGIAY" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="fk_DONHANG_IDKH">
+    <End Role="KHACHHANG" Type="Self.KHACHHANG" Multiplicity="1">
+      <OnDelete Action="Cascade" />
+    </End>
+    <End Role="DONHANG" Type="Self.DONHANG" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="KHACHHANG">
+        <PropertyRef Name="IDKH" />
+      </Principal>
+      <Dependent Role="DONHANG">
+        <PropertyRef Name="IDKH" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="fk_DONHANG_IDNV">
+    <End Role="NHANVIEN" Type="Self.NHANVIEN" Multiplicity="1">
+      <OnDelete Action="Cascade" />
+    </End>
+    <End Role="DONHANG" Type="Self.DONHANG" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="NHANVIEN">
+        <PropertyRef Name="IDNV" />
+      </Principal>
+      <Dependent Role="DONHANG">
+        <PropertyRef Name="IDNV" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="fk_HDN_IDNCC">
+    <End Role="NCC" Type="Self.NCC" Multiplicity="1">
+      <OnDelete Action="Cascade" />
+    </End>
+    <End Role="HDN" Type="Self.HDN" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="NCC">
+        <PropertyRef Name="IDNCC" />
+      </Principal>
+      <Dependent Role="HDN">
+        <PropertyRef Name="IDNCC" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="fk_HDN_IDNV">
+    <End Role="NHANVIEN" Type="Self.NHANVIEN" Multiplicity="1">
+      <OnDelete Action="Cascade" />
+    </End>
+    <End Role="HDN" Type="Self.HDN" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="NHANVIEN">
+        <PropertyRef Name="IDNV" />
+      </Principal>
+      <Dependent Role="HDN">
+        <PropertyRef Name="IDNV" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="fk_THEKH_IDKH">
+    <End Role="KHACHHANG" Type="Self.KHACHHANG" Multiplicity="1" />
+    <End Role="THEKH" Type="Self.THEKH" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="KHACHHANG">
+        <PropertyRef Name="IDKH" />
+      </Principal>
+      <Dependent Role="THEKH">
+        <PropertyRef Name="IDKH" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="fk_THEKH_MaLoai">
+    <End Role="LOAITHE" Type="Self.LOAITHE" Multiplicity="1">
+      <OnDelete Action="Cascade" />
+    </End>
+    <End Role="THEKH" Type="Self.THEKH" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="LOAITHE">
+        <PropertyRef Name="MaLoai" />
+      </Principal>
+      <Dependent Role="THEKH">
+        <PropertyRef Name="MaLoai" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <EntityContainer Name="QLGEntities" annotation:LazyLoadingEnabled="true">
+    <EntitySet Name="CTHDBs" EntityType="Self.CTHDB" />
+    <EntitySet Name="CTHDNs" EntityType="Self.CTHDN" />
+    <EntitySet Name="DOITRAs" EntityType="Self.DOITRA" />
+    <EntitySet Name="DONHANGs" EntityType="Self.DONHANG" />
+    <EntitySet Name="GIAYs" EntityType="Self.GIAY" />
+    <EntitySet Name="HDBs" EntityType="Self.HDB" />
+    <EntitySet Name="HDNs" EntityType="Self.HDN" />
+    <EntitySet Name="KHACHHANGs" EntityType="Self.KHACHHANG" />
+    <EntitySet Name="LOAITHEs" EntityType="Self.LOAITHE" />
+    <EntitySet Name="NCCs" EntityType="Self.NCC" />
+    <EntitySet Name="NHANVIENs" EntityType="Self.NHANVIEN" />
+    <EntitySet Name="THEKHs" EntityType="Self.THEKH" />
+    <AssociationSet Name="fk_CTHDB_IDGIAY" Association="Self.fk_CTHDB_IDGIAY">
+      <End Role="GIAY" EntitySet="GIAYs" />
+      <End Role="CTHDB" EntitySet="CTHDBs" />
+    </AssociationSet>
+    <AssociationSet Name="fk_CTHDB_MaHDB" Association="Self.fk_CTHDB_MaHDB">
+      <End Role="HDB" EntitySet="HDBs" />
+      <End Role="CTHDB" EntitySet="CTHDBs" />
+    </AssociationSet>
+    <AssociationSet Name="fk_CTHDN_IDGIAY" Association="Self.fk_CTHDN_IDGIAY">
+      <End Role="GIAY" EntitySet="GIAYs" />
+      <End Role="CTHDN" EntitySet="CTHDNs" />
+    </AssociationSet>
+    <AssociationSet Name="fk_CTHDN_MaHDN" Association="Self.fk_CTHDN_MaHDN">
+      <End Role="HDN" EntitySet="HDNs" />
+      <End Role="CTHDN" EntitySet="CTHDNs" />
+    </AssociationSet>
+    <AssociationSet Name="fk_DOITRA_IDGIAY" Association="Self.fk_DOITRA_IDGIAY">
+      <End Role="GIAY" EntitySet="GIAYs" />
+      <End Role="DOITRA" EntitySet="DOITRAs" />
+    </AssociationSet>
+    <AssociationSet Name="fk_DOITRA_IDKH" Association="Self.fk_DOITRA_IDKH">
+      <End Role="KHACHHANG" EntitySet="KHACHHANGs" />
+      <End Role="DOITRA" EntitySet="DOITRAs" />
+    </AssociationSet>
+    <AssociationSet Name="fk_DOITRA_MaHDB" Association="Self.fk_DOITRA_MaHDB">
+      <End Role="HDB" EntitySet="HDBs" />
+      <End Role="DOITRA" EntitySet="DOITRAs" />
+    </AssociationSet>
+    <AssociationSet Name="fk_DONHANG_IDGIAY" Association="Self.fk_DONHANG_IDGIAY">
+      <End Role="GIAY" EntitySet="GIAYs" />
+      <End Role="DONHANG" EntitySet="DONHANGs" />
+    </AssociationSet>
+    <AssociationSet Name="fk_DONHANG_IDKH" Association="Self.fk_DONHANG_IDKH">
+      <End Role="KHACHHANG" EntitySet="KHACHHANGs" />
+      <End Role="DONHANG" EntitySet="DONHANGs" />
+    </AssociationSet>
+    <AssociationSet Name="fk_DONHANG_IDNV" Association="Self.fk_DONHANG_IDNV">
+      <End Role="NHANVIEN" EntitySet="NHANVIENs" />
+      <End Role="DONHANG" EntitySet="DONHANGs" />
+    </AssociationSet>
+    <AssociationSet Name="fk_HDN_IDNCC" Association="Self.fk_HDN_IDNCC">
+      <End Role="NCC" EntitySet="NCCs" />
+      <End Role="HDN" EntitySet="HDNs" />
+    </AssociationSet>
+    <AssociationSet Name="fk_HDN_IDNV" Association="Self.fk_HDN_IDNV">
+      <End Role="NHANVIEN" EntitySet="NHANVIENs" />
+      <End Role="HDN" EntitySet="HDNs" />
+    </AssociationSet>
+    <AssociationSet Name="fk_THEKH_IDKH" Association="Self.fk_THEKH_IDKH">
+      <End Role="KHACHHANG" EntitySet="KHACHHANGs" />
+      <End Role="THEKH" EntitySet="THEKHs" />
+    </AssociationSet>
+    <AssociationSet Name="fk_THEKH_MaLoai" Association="Self.fk_THEKH_MaLoai">
+      <End Role="LOAITHE" EntitySet="LOAITHEs" />
+      <End Role="THEKH" EntitySet="THEKHs" />
+    </AssociationSet>
+  </EntityContainer>
+</Schema>

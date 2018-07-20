@@ -1,0 +1,48 @@
+﻿@using QuanLyBanGiay.Models;
+@model List<GioHang>
+<link href="~/CSS/TrangChuCss.css" rel="stylesheet" />
+<link href="~/CSS/style.css" rel="stylesheet" />
+@{
+    ViewBag.Title = "Sửa giỏ hàng";
+    Layout = "~/Views/Layout/NguoiDungLayout.cshtml";
+}
+
+<h2 style="color:Red; font-size:x-large">Giỏ Hàng</h2>
+<div id="divGioHang">
+    <table>
+        <tr>
+            <td>Mã giày</td>
+            <td>Tên giày</td>
+            <td>Ảnh </td>
+            <td>Đơn giá </td>
+            <td>Số lượng  </td>
+            <td> Thành tiền </td>
+        </tr>
+        @foreach (var item in Model)
+        {
+            
+            <tr>
+                <td>@item.IDGiay</td>
+
+                <td>@item.TenGiay</td>
+
+                <td><img src="@Url.Content("~/imagesSP/"+item.Anh)" width="50" height="50" /> </td>
+
+                <td>@String.Format("{0:0,0}", item.DonGiaB) VNĐ</td>
+                @using (Html.BeginForm("CapNhatGioHang", "GioHang", new {IDGiay=item.IDGiay}))
+                    {
+                        <td>@Html.TextBox("txtSoLuong",item.SoLuong)  </td>
+
+                        <td>@String.Format("{0:0,0}", item.ThanhTien) VNĐ</td>
+                        <td><input type="submit" value="Cập nhật" />
+                            <br />
+                             @Html.ActionLink("Xóa","XoaGioHang", new {IDGiay=item.IDGiay })
+                        </td>
+                    }
+                <td></td>
+            </tr>
+            
+        }
+    </table>
+</div>
+

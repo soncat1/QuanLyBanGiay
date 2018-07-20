@@ -1,0 +1,23 @@
+﻿@using QuanLyBanGiay.Models;
+@model List<GIAY>
+<link href="~/CSS/TrangChuCss.css" rel="stylesheet" />
+@{
+    ViewBag.Title = "GiayNam";
+    Layout = "~/Views/Layout/NguoiDungLayout.cshtml";
+}
+
+    @{int i = 0;}
+    @foreach (var item in Model)
+    {
+        i++;
+        <div id="SanPham">
+            <div id="Anh"><a href="@Url.Action("XemChiTiet","Giay", new {@IDGiay=item.IDGIAY })"><img src="@Url.Content("~/imagesSP/"+item.Anh)" width="280" height="250"></a></div>
+            <div id="TenGiay" style="font-size:large">@item.Tengiay</div>
+            <div id="DonGia" style="color:red"><font color="green">Giá:</font>@String.Format("{0:0,0}", item.DongiaB) VNĐ</div>
+        </div>
+        if (i % 3 == 0)
+        {
+            <div style="clear:both"></div>
+        }
+    }
+

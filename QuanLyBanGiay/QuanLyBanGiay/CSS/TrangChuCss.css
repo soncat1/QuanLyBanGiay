@@ -1,0 +1,49 @@
+﻿#SanPham{
+    float:left;
+    width:313px;
+    margin-top:50px;
+}
+#divGioHang{
+        border:1px solid #EEEEEE;
+        margin-left:10%;
+        margin-top:20px;
+    }
+#divGioHang td {
+        padding:10px;
+        border: 1px solid #EEEEEE;
+        color:#000;
+        }
+#divGioHang a{
+    color:blue;
+}
+#divGioHang a:hover{
+    background-color: rgba(0, 0, 255, 0.3);
+}
+.Menutrang{
+
+    
+    float:right;
+    margin-top:300px;
+    
+
+}
+.cart{
+    position:relative;
+    margin-top:-50px;
+}
+.cart img{
+	width: 50px;
+	height: 50px;
+	float: right;
+	padding-left:100px;
+    margin-top:20px;
+}
+.cart#Count
+{
+    float:right;
+    margin-top:40px;
+    margin-right:-127px;
+        
+}
+
+

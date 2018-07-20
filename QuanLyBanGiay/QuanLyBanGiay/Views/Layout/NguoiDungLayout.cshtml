@@ -1,0 +1,100 @@
+﻿    
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Giày thể thao đẹp</title>
+    <meta charset="utf-8">
+
+    <link href="~/CSS/style.css" rel="stylesheet" />
+    
+</head>
+<body>
+   
+    <div id="case">
+        <div class="wrapper">
+            <div class="icon"></div>
+            @*<div class="search_form">
+                <form class="search-form">
+                    <input class="search_input" type="text" name="" placeholder="Nhập từ khóa bạn cần tìm">
+                    <input type="submit" value="Tìm kiếm" class="btnsearch">
+                    
+                </form>
+            </div>*@
+            <div id="txtTimKiem">
+                @using (Html.BeginForm("KetQuaTimKiem", "TimKiem", FormMethod.Post))
+                {
+                    @Html.TextBox("txtTimKiem", "", htmlAttributes: new { @class = "TextBoxTimKiem", @placeholder = "Nhập vào từ khóa cần tìm ..." })
+                    @*Chèn vào image button hình ảnh*@
+                    <div id="divHinhAnhTimKiem">
+                        <button type="submit"><img src="~/images/timkiem.jpg" /> </button>
+                    </div>
+                }
+
+            </div>
+            <div class="cart">
+                <a href="~/GioHang/GioHang"><img src="~/images/cart1.png" id="cart" /></a>
+                @Html.Action("GioHangPartial", "GioHang")
+            </div>
+          
+        </div>
+        <div class="box">
+            <div class="inner">
+                <div class="menu">
+                    <ul>
+                        <li><a href="~/Home/Index">Trang chủ</a></li>
+                        <li>
+                            <a href="#">Danh mục</a>
+                            <ul class="sub-menu">
+                                <li><a href="~/GiayNam/GiayNam">Giầy nam</a></li>
+                                <li><a href="~/GiayNu/GiayNu">Giầy nữ</a></li>
+                                <li><a href="~/GiayKhac/GiayKhac">Khác</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="#">Hạ giá</a></li>
+                        <li><a href="#">Chăm sóc giày</a></li>
+                        <li><a href="#">Tin tức</a></li>
+                        <li><a href="#">Liên hệ</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div id="content">
+            
+            <div class="data">
+                @RenderBody()
+            </div>
+            <div id="footer">
+                <div class="footer-menu">
+                    <ul>
+                        <li class="submenu">
+                            <a href="" class="menutitle"> Thông tin công ty</a>
+                            <ul>
+                                <li><a href=""> Thông tin công ty</a></li>
+                                <li><a href=""> Hỗ trợ khách hàng</a></li>
+                                <li><a href=""> Chính sách mua hàng</a></li>
+                            </ul>
+                        </li>
+                        <li class="submenu">
+                            <a href="" class="menutitle">Hỗ trợ khách hàng</a>
+                            <ul>
+                                <li><a href=""> Hướng dẫn mua hàng online</a></li>
+                                <li><a href=""> Hướng dẫn mua hàng trả góp</a></li>
+                                <li><a href=""> Quy ché quản lí hoạt động</a></li>
+                            </ul>
+                        </li>
+                        <li class="submenu">
+                            <a href="" class="menutitle">Chính sách mua hàng</a>
+                            <ul>
+                                <li><a href=""> Quy định, chính sách</a></li>
+                                <li><a href=""> Chính sách bảo hành, đổi trả</a></li>
+                                <li><a href=""> Chính sách hội viên</a></li>
+                                <li><a href=""> Giao hàng và lắp đặt</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

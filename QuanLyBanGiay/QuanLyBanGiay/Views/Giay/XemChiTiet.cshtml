@@ -1,0 +1,24 @@
+﻿@using QuanLyBanGiay.Models;
+@model GIAY
+<link href="~/CSS/style.css" rel="stylesheet" />
+<link href="~/CSS/TrangChuCss.css" rel="stylesheet" />
+@{
+    ViewBag.Title = "XemChiTiet";
+    Layout = "~/Views/Layout/NguoiDungLayout.cshtml";
+}
+<div id="product">
+    <div class="chitietsp"><a href="#"><img src="@Url.Content("~/imagesSP/"+Model.Anh)"></a></div>
+
+    <div class="product-info">
+        Tên:@Model.Tengiay<br />
+        Loại giày:@Model.Loaigiay<br />
+        Màu sắc:@Model.Mausac<br />
+        Kích cỡ:@Model.Size<br />
+        Giá: @String.Format("{0:0,0}",Model.DongiaB) VNĐ<br />
+        Nhà cung cấp:@ViewBag.TenNCC<br />
+        @using (Html.BeginForm("ThemGioHang","GioHang",new {@IDGiay=Model.IDGIAY,@strURL=Request.Url.ToString()}))
+        {
+        <button>Mua</button>
+        }
+    </div>
+</div>

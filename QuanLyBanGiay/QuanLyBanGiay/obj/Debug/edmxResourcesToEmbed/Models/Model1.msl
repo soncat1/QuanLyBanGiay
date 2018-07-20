@@ -1,0 +1,152 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="QLGModelStoreContainer" CdmEntityContainer="QLGEntities">
+    <EntitySetMapping Name="CTHDBs">
+      <EntityTypeMapping TypeName="QLGModel.CTHDB">
+        <MappingFragment StoreEntitySet="CTHDB">
+          <ScalarProperty Name="IDB" ColumnName="IDB" />
+          <ScalarProperty Name="MaHDB" ColumnName="MaHDB" />
+          <ScalarProperty Name="IDGIAY" ColumnName="IDGIAY" />
+          <ScalarProperty Name="Donvi" ColumnName="Donvi" />
+          <ScalarProperty Name="DongiaB" ColumnName="DongiaB" />
+          <ScalarProperty Name="Soluong" ColumnName="Soluong" />
+          <ScalarProperty Name="Thanhtien" ColumnName="Thanhtien" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="CTHDNs">
+      <EntityTypeMapping TypeName="QLGModel.CTHDN">
+        <MappingFragment StoreEntitySet="CTHDN">
+          <ScalarProperty Name="IDN" ColumnName="IDN" />
+          <ScalarProperty Name="MaHDN" ColumnName="MaHDN" />
+          <ScalarProperty Name="IDGIAY" ColumnName="IDGIAY" />
+          <ScalarProperty Name="Donvi" ColumnName="Donvi" />
+          <ScalarProperty Name="DongiaN" ColumnName="DongiaN" />
+          <ScalarProperty Name="Soluong" ColumnName="Soluong" />
+          <ScalarProperty Name="Thanhtien" ColumnName="Thanhtien" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="DOITRAs">
+      <EntityTypeMapping TypeName="QLGModel.DOITRA">
+        <MappingFragment StoreEntitySet="DOITRA">
+          <ScalarProperty Name="MaDTra" ColumnName="MaDTra" />
+          <ScalarProperty Name="IDKH" ColumnName="IDKH" />
+          <ScalarProperty Name="IDGIAY" ColumnName="IDGIAY" />
+          <ScalarProperty Name="MaHDB" ColumnName="MaHDB" />
+          <ScalarProperty Name="Soluong" ColumnName="Soluong" />
+          <ScalarProperty Name="NgayDoitra" ColumnName="NgayDoitra" />
+          <ScalarProperty Name="Xuly" ColumnName="Xuly" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="DONHANGs">
+      <EntityTypeMapping TypeName="QLGModel.DONHANG">
+        <MappingFragment StoreEntitySet="DONHANG">
+          <ScalarProperty Name="MaDDH" ColumnName="MaDDH" />
+          <ScalarProperty Name="IDKH" ColumnName="IDKH" />
+          <ScalarProperty Name="IDGIAY" ColumnName="IDGIAY" />
+          <ScalarProperty Name="IDNV" ColumnName="IDNV" />
+          <ScalarProperty Name="Soluong" ColumnName="Soluong" />
+          <ScalarProperty Name="NgayDat" ColumnName="NgayDat" />
+          <ScalarProperty Name="NgayGH" ColumnName="NgayGH" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="GIAYs">
+      <EntityTypeMapping TypeName="QLGModel.GIAY">
+        <MappingFragment StoreEntitySet="GIAY">
+          <ScalarProperty Name="IDGIAY" ColumnName="IDGIAY" />
+          <ScalarProperty Name="Tengiay" ColumnName="Tengiay" />
+          <ScalarProperty Name="Loaigiay" ColumnName="Loaigiay" />
+          <ScalarProperty Name="Soluong" ColumnName="Soluong" />
+          <ScalarProperty Name="Size" ColumnName="Size" />
+          <ScalarProperty Name="Mausac" ColumnName="Mausac" />
+          <ScalarProperty Name="IDNCC" ColumnName="IDNCC" />
+          <ScalarProperty Name="DongiaN" ColumnName="DongiaN" />
+          <ScalarProperty Name="DongiaB" ColumnName="DongiaB" />
+          <ScalarProperty Name="Anh" ColumnName="Anh" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="HDBs">
+      <EntityTypeMapping TypeName="QLGModel.HDB">
+        <MappingFragment StoreEntitySet="HDB">
+          <ScalarProperty Name="MaHDB" ColumnName="MaHDB" />
+          <ScalarProperty Name="Ngaylap" ColumnName="Ngaylap" />
+          <ScalarProperty Name="MaThe" ColumnName="MaThe" />
+          <ScalarProperty Name="IDKH" ColumnName="IDKH" />
+          <ScalarProperty Name="Chietkhau" ColumnName="Chietkhau" />
+          <ScalarProperty Name="Thanhtien" ColumnName="Thanhtien" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="HDNs">
+      <EntityTypeMapping TypeName="QLGModel.HDN">
+        <MappingFragment StoreEntitySet="HDN">
+          <ScalarProperty Name="MaHDN" ColumnName="MaHDN" />
+          <ScalarProperty Name="Ngaylap" ColumnName="Ngaylap" />
+          <ScalarProperty Name="IDNV" ColumnName="IDNV" />
+          <ScalarProperty Name="IDNCC" ColumnName="IDNCC" />
+          <ScalarProperty Name="Thanhtien" ColumnName="Thanhtien" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="KHACHHANGs">
+      <EntityTypeMapping TypeName="QLGModel.KHACHHANG">
+        <MappingFragment StoreEntitySet="KHACHHANG">
+          <ScalarProperty Name="IDKH" ColumnName="IDKH" />
+          <ScalarProperty Name="tenkhachhang" ColumnName="tenkhachhang" />
+          <ScalarProperty Name="gioitinh" ColumnName="gioitinh" />
+          <ScalarProperty Name="diachi" ColumnName="diachi" />
+          <ScalarProperty Name="sodienthoai" ColumnName="sodienthoai" />
+          <ScalarProperty Name="email" ColumnName="email" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="LOAITHEs">
+      <EntityTypeMapping TypeName="QLGModel.LOAITHE">
+        <MappingFragment StoreEntitySet="LOAITHE">
+          <ScalarProperty Name="MaLoai" ColumnName="MaLoai" />
+          <ScalarProperty Name="Tenloai" ColumnName="Tenloai" />
+          <ScalarProperty Name="DT" ColumnName="DT" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="NCCs">
+      <EntityTypeMapping TypeName="QLGModel.NCC">
+        <MappingFragment StoreEntitySet="NCC">
+          <ScalarProperty Name="IDNCC" ColumnName="IDNCC" />
+          <ScalarProperty Name="TenNCC" ColumnName="TenNCC" />
+          <ScalarProperty Name="diachi" ColumnName="diachi" />
+          <ScalarProperty Name="dienthoai" ColumnName="dienthoai" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="NHANVIENs">
+      <EntityTypeMapping TypeName="QLGModel.NHANVIEN">
+        <MappingFragment StoreEntitySet="NHANVIEN">
+          <ScalarProperty Name="IDNV" ColumnName="IDNV" />
+          <ScalarProperty Name="TenNV" ColumnName="TenNV" />
+          <ScalarProperty Name="ngaysinh" ColumnName="ngaysinh" />
+          <ScalarProperty Name="cmt" ColumnName="cmt" />
+          <ScalarProperty Name="diachi" ColumnName="diachi" />
+          <ScalarProperty Name="dienthoai" ColumnName="dienthoai" />
+          <ScalarProperty Name="bophan" ColumnName="bophan" />
+          <ScalarProperty Name="gioitinh" ColumnName="gioitinh" />
+          <ScalarProperty Name="taikhoan" ColumnName="taikhoan" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="THEKHs">
+      <EntityTypeMapping TypeName="QLGModel.THEKH">
+        <MappingFragment StoreEntitySet="THEKH">
+          <ScalarProperty Name="MaThe" ColumnName="MaThe" />
+          <ScalarProperty Name="IDKH" ColumnName="IDKH" />
+          <ScalarProperty Name="MaLoai" ColumnName="MaLoai" />
+          <ScalarProperty Name="Ngaycap" ColumnName="Ngaycap" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>
